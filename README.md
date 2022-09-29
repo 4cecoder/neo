@@ -4,7 +4,7 @@
 
 `~/.config/nvim/`
 
-### Run While in NVIM
+### Run While in NVIM Command Mode
 
 `GoInstallBinaries`
 
