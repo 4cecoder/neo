@@ -40,7 +40,11 @@ packer.init({
 
 return packer.startup(function(use)
 	-- My plugins here
-
+	use {
+       		  'nvim-treesitter/nvim-treesitter',
+		  run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    	    }
+	use 'ray-x/go.nvim'
 	use 'wbthomason/packer.nvim' -- Have packer manage itself
 	use 'github/copilot.vim' -- :Copilot setup
 
